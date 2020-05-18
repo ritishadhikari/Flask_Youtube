@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HOME PAGE</title>
+</head>
+<body>
+  <h1>Home Page</h1>
+  <p>Hello Dear {{content}}!</p>
+  {% for x in list_item %}
+    {% if x%2==0 %}
+      <p>{{x}} is even</p>
+    {% else %}
+      <p>{{x}} is odd <p>
+    {% endif %}
+  {% endfor %}
+</body>
+</html>
